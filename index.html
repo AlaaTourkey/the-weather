@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>my weather app</title>
+</head>
+
+<body>
+
+  <div class="position-relative">
+    <div id="particles-js" class=" "></div>
+    <div class="position-absolute w-100 top-5 d-flex align-items-center justify-content-center flex-column">
+
+      <h2 class="text-white m-4 fs-1">what is the weather </h2>
+
+      <section class="search-input w-100 ">
+        <div class="search-sec ">
+          <div class="container">
+            <form>
+              <input class="form-control rounded-pill p-4 text-white" list="datalistOptions" id="searchBar"
+                placeholder="Find Your Location..">
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="card-group gap-1 row">
+          <div class="card col-md-4  ">
+            <div class="card-body  ">
+              <div class="  d-flex justify-content-between py-3">
+                <p id="today"></p>
+                <p id="today-date-month"></p>
+              </div>
+              <div class=" temp-datails py-3">
+                <p id="location" class="ms-3 fs-3"></p>
+                <div class=" d-flex justify-content-between mb-4">
+                  <div class="pt-3 ms-5">
+                    <h2 id="todayDegree" class="d-inline-block"></h2>
+                    <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                  </div>
+                  <img id="todayIcon" width="90" class="me-5" />
+                </div>
+                <p id="todayDescription" class="my-2"></p>
+                <div class=" details d-flex justify-content-between mt-1">
+                  <div>
+                    <i class="fas fa-umbrella"></i>
+                    <span id="humidty"></span> <span>%</span>
+                  </div>
+                  <div><i class="fas fa-wind"></i>
+                    <span id="wind"></span> <span>km/h</span>
+                  </div>
+                  <div> <i class="far fa-compass"></i>
+                    <span id="compass"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-md-4 ">
+            <div class="card-body  ">
+              <div class="  d-flex justify-content-center fw-bolder fs-5 py-3 ">
+                <p class="nextDay"></p>
+              </div>
+              <div class="temp-datails  d-flex flex-column justify-content-center  ">
+                <img class="nextDayIcon " width="95" />
+                <div class="text-center">
+                  <div class="pt-1 mb-0 ">
+                    <h2 class="maxDegree d-inline-block"></h2>
+                    <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                    <br>
+                    <p class="minDegree d-inline-block"></p>
+                    <p class="d-inline-block"><sup>o</sup>C</p>
+                    <p class="nextDayDescription my-4"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="  col-md-4 ">
+            <div class="card-body  ">
+              <div class="  d-flex justify-content-center fw-bolder fs-5 py-3">
+                <p class="nextDay"></p>
+              </div>
+              <div class="temp-datails  d-flex flex-column justify-content-center">
+                <img class="nextDayIcon" width="95" />
+                <div class="text-center">
+                  <div class="pt-1 mb-0">
+                    <h2 class="maxDegree d-inline-block"></h2>
+                    <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                    <br>
+                    <p class="minDegree d-inline-block"></p>
+                    <p class="d-inline-block"><sup>o</sup>C</p>
+                    <p class="nextDayDescription my-4"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="particles.js-master/particles.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
